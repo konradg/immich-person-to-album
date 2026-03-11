@@ -49,7 +49,7 @@ export class PersonToAlbum {
         }
       })
 	  
-	  if (!res.assets || res.assets.length === 0) {
+	  if (res.assets.items.length === 0) {
 	    console.log(`No assets found for this person, skipping`);
 		return;
 	  }
